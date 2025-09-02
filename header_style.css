@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f8f8;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #004d66;
+  padding: 10px 30px;
+  color: white;
+}
+
+.navbar img.logo {
+  height: 50px; 
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-greeting {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.user-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.user-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: white;
+  color: black;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  margin-top: 5px;
+  z-index: 100;
+}
+
+.dropdown a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown a:hover {
+  background: #f1f1f1;
+}
+
+.user-menu:hover .dropdown {
+  display: block;
+}
+
+.section-bar {
+  display: flex;
+  justify-content: space-between;
+  background: #006680;
+  padding: 15px 30px;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.section-bar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px; 
+  padding: 5px 10px; 
+  position: relative; 
+  transition: color 0.3s ease; 
+}
+
+.section-bar a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #ffce7c;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s ease-in-out; /* This is for animation*/
+}
+.section-bar a:hover::after {
+  width: 100%;
+}
+.section-bar a.active::after {
+  width: 100%;
+}
+.section-bar a.active {
+    font-weight: bold;
+}

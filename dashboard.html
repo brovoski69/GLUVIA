@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gluvia | Dashboard</title>
+    <link rel="stylesheet" href="header_style.css">
+    <link rel="stylesheet" href="dashboard_style.css"> 
+</head>
+<body>
+  
+  
+  <div id="header-placeholder"></div>
+
+  
+  <main class="content-area">
+    <div class="upload-container">
+      <label for="prescriptionUpload" class="upload-label">
+        <img src="attach_file.png" alt="Attach" width="20" height="20">
+        <span>Attach Prescription</span>
+      </label>
+      <input type="file" id="prescriptionUpload" hidden>
+      <div id="loader" class="loader" style="display:none;"></div>
+      <p id="uploadMessage" class="upload-message" style="display: none;">Uploaded Successfully!</p>
+    </div>
+  </main>
+
+  <script src="header_script.js"></script>
+  <script src="dashboard_script.js"></script> 
+</body>
+</html>
